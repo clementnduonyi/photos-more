@@ -1,0 +1,5 @@
+<%= form_with(url: '/', method: :get, local: true) do |f| %>
+    <h3> View Your Flickr Gallery Here </h3>
+    <%= f.text_field :user_id, placeholder: "Type in your Id", class: "from_input"%>
+    <%= f.submit 'view'%>
+<% end %>

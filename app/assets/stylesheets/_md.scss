@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px){
+    .medium-6{
+        flex-basis: 50%;
+    }
+
+    nav button{display: none;}
+    nav ul{display: block;}
+    nav li{
+        width: 42%;
+        float: left;
+        margin: 0 0 0 .5rem;
+        
+        
+    
+    }
+    
+    nav a{padding: .7rem 1rem;}
+
+    nav ul{margin-left: 1.1vw;}
+    
+}
+    

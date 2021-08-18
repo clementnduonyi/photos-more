@@ -1,0 +1,14 @@
+<main>
+    <div class="row limited form">
+        <div class="column small-12">
+            <%= render 'form' %>
+        </div>
+    </div>
+    <div class="row limited">
+        <% @photos.each do |photo| %>
+            <div class="column small-12 medium-6 large-3">
+                <img src='<%= Flickr.url_n(photo)%>'/>
+            </div>
+        <% end %>
+    </div>
+</main>

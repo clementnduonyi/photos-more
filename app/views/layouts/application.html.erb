@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KittensArena</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class='row limited'>
+        <div class="column small-12">
+          <h1>Photos&More</h1>
+          <h2>Beautiful memories<h2>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="row limited">
+        <button id="hamburgerBtn">&#9776</button>
+        <ul id="primaryBtn">
+          <li class="active"><%= link_to "Home", root_path%></li>
+          <li><%=link_to "About", root_path%></li>
+        </ul>
+      </div>
+    </nav>  
+    <%= yield %>
+    
+  </body>
+</html>
